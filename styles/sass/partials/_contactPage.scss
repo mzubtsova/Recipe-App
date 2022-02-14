@@ -28,17 +28,17 @@
   text-align: center;
   li{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 60px;
+    margin: 15px 5px;
     a{
     // background-color: $darkblue;
-    border-radius: 20px;
+    border-radius: 50px;
     color: $white;
     font-size: 30px;
-    padding: 0 43px;
-    border-radius: 3px;
+    padding: 0 40px;
+    // border-radius: 3px;
     text-decoration: none;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   }
    
@@ -83,7 +83,7 @@
 .contactUs {
     color: $white;
     text-align: center;
-    padding-top: 85px;
+    padding-top: 55px;
     font-size: 65px;
 }
 
