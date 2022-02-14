@@ -8,3 +8,6 @@ buttons.forEach((individualButton) => {
         console.log(individualButton.classList);
     })
 });
+
+
+
