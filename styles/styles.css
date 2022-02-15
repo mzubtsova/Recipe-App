@@ -528,6 +528,22 @@ label.logo {
   color: #949292;
 }
 
+.junoFooter ul li {
+  text-align: center;
+}
+.junoFooter ul li a {
+  color: white;
+  font-size: 22px;
+  background-color: #0f321c;
+}
+
+.junoFooter ul li a:hover,
+.junoFooter ul li:focus {
+  /* border: 3px solid #F2A11C; */
+  color: white;
+  background-color: #0f321c;
+}
+
 @media (max-width: 870px) {
   .checkbtn {
     display: block;

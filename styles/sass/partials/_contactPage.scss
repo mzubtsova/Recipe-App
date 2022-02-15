@@ -126,6 +126,26 @@ textarea::placeholder {
     color: $grey;
 }
 }
+.junoFooter ul li{
+  text-align: center;
+  
+ 
+  
+  a{
+    color: $white;
+    font-size: 22px;
+    background-color: $darkgreen;
+  }
+}
+
+.junoFooter ul li a:hover,
+ .junoFooter ul li:focus{
+    /* border: 3px solid #F2A11C; */
+    color: $white;
+    background-color: $darkgreen;
+    // border-radius: 35%;
+    // color: $black;
+ }
 
 
 
