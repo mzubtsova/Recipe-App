@@ -312,7 +312,7 @@ label.logo {
   display: none;
 }
 
-body {
+.navigation {
   background-image: url(../assets/home-page.jpg);
   height: 100vh;
   width: 100vw;
@@ -389,6 +389,14 @@ button:focus {
 button.grey {
   background-color: #949292;
   color: black;
+}
+
+footer {
+  background-color: #0f321c;
+  text-align: center;
+}
+footer a {
+  color: white;
 }
 
 .contactContent {
