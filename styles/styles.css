@@ -100,10 +100,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-img {
-  border-style: none;
-}
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -128,7 +124,6 @@ button, html [type=button], [type=reset], [type=submit] {
 }
 
 button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
 }
 
@@ -332,6 +327,9 @@ label.logo {
           align-items: center;
 }
 
+.container {
+  color: black;
+}
 .container h1 {
   margin-bottom: 80px;
   letter-spacing: 10px;
@@ -426,6 +424,16 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
+}
+.searchResult .recipes p {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+img {
+  border: 4px solid white;
+  border-radius: 20px;
 }
 
 .contactContent {
