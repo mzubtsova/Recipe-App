@@ -400,6 +400,16 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+}
+.searchResult .recipes p {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+img {
+  border: 4px solid white;
+  border-radius: 20px;
 }
 
 .contactContent {
