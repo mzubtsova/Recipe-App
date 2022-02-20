@@ -29,13 +29,14 @@ foodApp.getRecipes = (searchQuery) => {
         .then(function (apiJsonData) {
             const ul = document.querySelector("ul");
             // This will clear the form for new input.
-            // ul.innerHTML = "";
+            ul.innerHTML = "";
             foodApp.displayrecipes(apiJsonData.hits)
         });
 }
 // selecting the data from API and appending it on the page
 foodApp.displayrecipes = function (recipes) {
     console.log(recipes);
+    
     //selected ul
     const ul = document.querySelector(".recipes");
     recipes.forEach(item => {
@@ -65,6 +66,7 @@ foodApp.displayrecipes = function (recipes) {
         listElement.append(calories);
         ul.append(listElement);
     });
+    
 }
 
 // changing button color on click
@@ -74,6 +76,7 @@ foodApp.buttons.forEach((individualButton) => {
     console.log(individualButton);
     individualButton.addEventListener('click', () => {
         individualButton.classList.toggle('grey');
+
         console.log(individualButton.classList);
     })
 });
