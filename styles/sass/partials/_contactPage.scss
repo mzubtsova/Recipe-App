@@ -13,9 +13,8 @@
   .contactNavigation li a:hover,
   .contactNavigation li a:focus{
     /* border: 3px solid #F2A11C; */
-    background-color: $white;
-    border-radius: 35%;
-    color: $black;
+    border-bottom: 2px solid $wheat; 
+  border-radius: 0px; 
   
 }
 
@@ -34,7 +33,7 @@
     // background-color: $darkblue;
     border-radius: 50px;
     color: $white;
-    font-size: 30px;
+    font-size: 25px;
     padding: 0 40px;
     // border-radius: 3px;
     text-decoration: none;
@@ -78,6 +77,10 @@
     margin: 0px auto;
     padding: 40px 80px;
     box-shadow: -12px 12px 8px 0 rgba(0, 0, 0, 0.5);
+    h1{
+      color:$wheat;
+      font-size: 60px;
+    }
 }
 
 .contactUs {
