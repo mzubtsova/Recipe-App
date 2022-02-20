@@ -265,7 +265,6 @@ img {
 }
 
 .navigation nav {
-  position: absolute;
   background: transparent;
   height: 80px;
   width: 100%;
@@ -314,22 +313,27 @@ label.logo {
 
 .navigation {
   background-image: url(../assets/home-page.jpg);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   border: none;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   background-size: cover;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
-  position: absolute;
   color: black;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 .container h1 {
   margin-bottom: 80px;
@@ -392,11 +396,48 @@ button.grey {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #0f321c;
   text-align: center;
 }
 footer a {
   color: white;
+}
+
+.searchResult {
+  width: 100%;
+}
+.searchResult .recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.searchResult .recipes li {
+  width: calc(100%/3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+.searchResult .recipes p {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+img {
+  border: 4px solid white;
+  border-radius: 20px;
 }
 
 .contactContent {
@@ -536,6 +577,10 @@ label.logo {
   color: #949292;
 }
 
+footer {
+  position: fixed;
+}
+
 .junoFooter ul li {
   text-align: center;
 }
@@ -550,6 +595,93 @@ label.logo {
   /* border: 3px solid #F2A11C; */
   color: white;
   background-color: #0f321c;
+}
+
+.galleryBody {
+  background-color: #0f321c;
+}
+.galleryBody h1 {
+  padding-top: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 1.9px;
+}
+.galleryBody ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.galleryBody li {
+  border-radius: 10px;
+  margin: 10px;
+  width: calc((100% / 2) - 20px);
+}
+.galleryBody img {
+  display: block;
+  max-width: 100%;
+  border: 7px solid white;
+  border-radius: 10px;
+}
+.galleryBody footer {
+  text-align: center;
+}
+
+.galleryNavigation nav {
+  position: absolute;
+  background: transparent;
+  height: 80px;
+  width: 100%;
+}
+.galleryNavigation nav ul {
+  text-align: center;
+}
+.galleryNavigation nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 15px 5px;
+}
+.galleryNavigation nav ul li a {
+  border-radius: 50px;
+  color: white;
+  font-size: 30px;
+  padding: 0 40px;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.galleryNavigation li a:hover,
+.galleryNavigation li a:focus {
+  /* border: 3px solid #F2A11C; */
+  background-color: white;
+  border-radius: 35%;
+  color: black;
 }
 
 @media (max-width: 870px) {

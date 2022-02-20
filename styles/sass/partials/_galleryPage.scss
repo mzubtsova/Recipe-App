@@ -1,0 +1,86 @@
+.galleryBody {
+        // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color:$darkgreen ;
+        h1 {
+        padding-top:150px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 60px;
+        letter-spacing: 1.9px;
+      }
+      ul {
+        list-style-type: none;
+        display:flex;
+        flex-wrap: wrap;
+      }
+      li {
+        border-radius: 10px;
+        margin: 10px;
+        width: calc((100% / 2) - 20px);
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        border: 7px solid $white;
+        border-radius: 10px;
+      }
+      footer{
+          text-align: center;
+      }
+      }
+    
+  .galleryNavigation nav{
+    position: absolute;
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    ul{
+  text-align: center;
+  li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 15px 5px;
+    a{
+    // background-color: $darkblue;
+    border-radius: 50px;
+    color: $white;
+    font-size: 30px;
+    padding: 0 40px;
+    // border-radius: 3px;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  }
+   
+  }
+  }
+  label.logo{
+    color: $white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+ 
+
+  .checkbtn{
+    font-size: 30px;
+    color: $white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+ .galleryNavigation li a:hover,
+  .galleryNavigation li a:focus{
+    /* border: 3px solid #F2A11C; */
+    background-color: $white;
+    border-radius: 35%;
+    color: $black;
+  
+}

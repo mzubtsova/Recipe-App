@@ -37,7 +37,7 @@ foodApp.getRecipes = (searchQuery) => {
 foodApp.displayrecipes = function (recipes) {
     console.log(recipes);
     //selected ul
-    const ul = document.querySelector("ul");
+    const ul = document.querySelector(".recipes");
     recipes.forEach(item => {
         const listElement = document.createElement('li');
         const label = document.createElement('p');
@@ -79,6 +79,9 @@ foodApp.buttons.forEach((individualButton) => {
 });
 
 foodApp.init()
+
+
+
 
 
 
