@@ -13,9 +13,16 @@ ul, li, a, input {
 ul {
   list-style: none;
 }
-a {text-decoration: none;
+a {
+  text-decoration: none;
 }
 img {
     max-width: 100%;
     display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
 }
