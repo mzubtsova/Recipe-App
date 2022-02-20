@@ -2,36 +2,36 @@ const foodApp = {};
 foodApp.APP_ID = '900da95e';
 foodApp.API_KEY = '40698503668e0bb3897581f4766d77f9';
 foodApp.init = function () {
-    // selecting the form and selecting the user input
-    document.getElementById("form").addEventListener("submit", function (e) {
-        // select the input from the form.
-        const input = document.getElementById('text');
-        // if (input.value.trim() === "") {
-        //   alert('Please add a valid recipe name!');
-        //   input.focus();
-        // } else {
-        //   console.log(input.value)
-        //   foodApp.getRecipes(input.value)
-        // }
-        console.log(input.value)
-        foodApp.getRecipes(input.value)
-        input.value = '';
-        e.preventDefault(); // stop form submission
-    });
+  // selecting the form and selecting the user input
+  document.getElementById("form").addEventListener("submit", function (e) {
+    // select the input from the form.
+    const input = document.getElementById('text');
+    // if (input.value.trim() === "") {
+    //   alert('Please add a valid recipe name!');
+    //   input.focus();
+    // } else {
+    //   console.log(input.value)
+    //   foodApp.getRecipes(input.value)
+    // }
+    console.log(input.value)
+    foodApp.getRecipes(input.value)
+    input.value = '';
+    e.preventDefault(); // stop form submission
+  });
 };
 // fetching the data from api in json format.
 foodApp.getRecipes = (searchQuery) => {
-    const BASE_URL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${foodApp.APP_ID}&app_key=${foodApp.API_KEY}&from=0&to=10`;
-    fetch(BASE_URL)
-        .then(function (apiResponse) {
-            return apiResponse.json();
-        })
-        .then(function (apiJsonData) {
-            const ul = document.querySelector("ul");
-            // This will clear the form for new input.
-            // ul.innerHTML = "";
-            foodApp.displayrecipes(apiJsonData.hits)
-        });
+  const BASE_URL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${foodApp.APP_ID}&app_key=${foodApp.API_KEY}&from=0&to=10`;
+  fetch(BASE_URL)
+    .then(function (apiResponse) {
+      return apiResponse.json();
+    })
+    .then(function (apiJsonData) {
+      const ul = document.querySelector("ul");
+      // This will clear the form for new input.
+      // ul.innerHTML = "";
+      foodApp.displayrecipes(apiJsonData.hits)
+    });
 }
 // selecting the data from API and appending it on the page
 foodApp.displayrecipes = function (recipes) {
@@ -65,17 +65,18 @@ foodApp.displayrecipes = function (recipes) {
         listElement.append(calories);
         ul.append(listElement);
     });
+
 }
 
 // changing button color on click
 foodApp.buttons = document.querySelectorAll('button');
 console.log(foodApp.buttons);
 foodApp.buttons.forEach((individualButton) => {
-    console.log(individualButton);
-    individualButton.addEventListener('click', () => {
-        individualButton.classList.toggle('grey');
-        console.log(individualButton.classList);
-    })
+  console.log(individualButton);
+  individualButton.addEventListener('click', () => {
+    individualButton.classList.toggle('grey');
+    console.log(individualButton.classList);
+  })
 });
 
 foodApp.init()
