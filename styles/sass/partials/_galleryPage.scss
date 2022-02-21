@@ -61,6 +61,8 @@ label.logo {
         list-style-type: none;
         display:flex;
         flex-wrap: wrap;
+        padding-bottom: 125px;
+
         li {
         margin: 10px;
         width: calc((100% / 2) - 20px);
