@@ -7,7 +7,7 @@ foodApp.init = function () {
     // select the input from the form.
     const input = document.getElementById('text');
 
-    console.log(input.value)
+
     foodApp.getRecipes(input.value)
     input.value = '';
     e.preventDefault(); // stop form submission
@@ -29,7 +29,7 @@ foodApp.getRecipes = (searchQuery) => {
 }
 // selecting the data from API and appending it on the page
 foodApp.displayrecipes = function (recipes) {
-  console.log(recipes);
+
 
   //selected ul
   const ul = document.querySelector(".recipes");
@@ -65,12 +65,12 @@ foodApp.displayrecipes = function (recipes) {
 
 // changing button color on click
 foodApp.buttons = document.querySelectorAll('button');
-console.log(foodApp.buttons);
+
 foodApp.buttons.forEach((individualButton) => {
-  console.log(individualButton);
+
   individualButton.addEventListener('click', () => {
     individualButton.classList.toggle('grey');
-    console.log(individualButton.classList);
+
   })
 });
 
