@@ -486,7 +486,6 @@ img {
 
 .contactNavigation li a:hover,
 .contactNavigation li a:focus {
-  /* border: 3px solid #F2A11C; */
   border-bottom: 2px solid wheat;
   border-radius: 0px;
 }
@@ -628,7 +627,6 @@ footer {
 
 .junoFooter ul li a:hover,
 .junoFooter ul li:focus {
-  /* border: 3px solid #F2A11C; */
   color: white;
   background-color: #0f321c;
 }
@@ -683,7 +681,6 @@ label.logo {
 
 .galleryPage li a:hover,
 .galleryPage li a:focus {
-  /* border: 3px solid #F2A11C; */
   border-bottom: 2px solid wheat;
   border-radius: 0px;
 }
@@ -726,7 +723,6 @@ h1 {
 .galleryPage nav ul {
     position: fixed;
     width: 100%;
-    /* height: 50vh; */
     background: #0f321c;
     top: 200px;
     right: -100%;
@@ -761,6 +757,11 @@ h1 {
   label.logo {
     font-size: 30px;
     padding-left: 50px;
+  }
+}
+@media (max-width: 868px) {
+  .navigation nav ul {
+    top: 315px;
   }
 }
 @media (max-width: 760px) {
@@ -839,5 +840,111 @@ h1 {
 .galleryPage nav ul li a {
     font-size: 22px;
     color: white;
+  }
+}
+@media (max-width: 500px) {
+  #name,
+#email,
+#message,
+label,
+textarea,
+.contactForm {
+    font-size: 22px;
+    max-width: 110%;
+  }
+
+  .contactContent .contactForm form input {
+    max-width: 60%;
+  }
+}
+@media (max-width: 440px) {
+  #name,
+#email,
+#message,
+label,
+textarea,
+.contactForm {
+    font-size: 22px;
+    max-width: 110%;
+  }
+
+  .contactContent .contactForm form input {
+    max-width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .navigation form {
+    width: 370px;
+    padding-left: 25px;
+  }
+
+  .navigation nav ul, .contactNavigation nav ul, .galleryPage nav ul {
+    top: 230px;
+  }
+
+  #name,
+#email,
+#message,
+label,
+textarea,
+.contactForm {
+    font-size: 22px;
+    max-width: 110%;
+    padding-bottom: 65px;
+  }
+
+  .galleryBody {
+    padding-bottom: 1px;
+  }
+
+  .galleryPage nav ul {
+    padding-top: 15px;
+  }
+
+  .contactContent .contactForm form input {
+    max-width: 60%;
+  }
+
+  .contactPage h1 {
+    color: wheat;
+    font-size: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .headerText {
+    font-size: 45px;
+  }
+
+  .navigation button {
+    width: 80px;
+  }
+
+  .navigation nav ul, .contactNavigation nav ul {
+    top: 300px;
+  }
+
+  .searchResult {
+    padding-bottom: 45px;
+  }
+
+  .galleryPage nav ul {
+    top: 240px;
+  }
+
+  .navigation form {
+    width: 360px;
+    padding-left: 30px;
+  }
+
+  .navigation form input {
+    font: size 20px;
+  }
+
+  #name, #email, #message, label, textarea, .contactForm {
+    padding-bottom: 1px;
+  }
+
+  .contactPage {
+    padding-bottom: 60px;
   }
 }

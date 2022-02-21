@@ -12,7 +12,6 @@
 
   .contactNavigation li a:hover,
   .contactNavigation li a:focus{
-    /* border: 3px solid #F2A11C; */
     border-bottom: 2px solid $wheat; 
   border-radius: 0px; 
   
@@ -30,12 +29,10 @@
     line-height: 60px;
     margin: 15px 5px;
     a{
-    // background-color: $darkblue;
     border-radius: 50px;
     color: $white;
     font-size: 25px;
     padding: 0 40px;
-    // border-radius: 3px;
     text-decoration: none;
     padding-top: 10px;
   }
@@ -146,11 +143,10 @@ footer{
 
 .junoFooter ul li a:hover,
  .junoFooter ul li:focus{
-    /* border: 3px solid #F2A11C; */
+
     color: $white;
     background-color: $darkgreen;
-    // border-radius: 35%;
-    // color: $black;
+
  }
 
 

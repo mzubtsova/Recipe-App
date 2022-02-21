@@ -6,13 +6,7 @@ foodApp.init = function () {
     document.getElementById("form").addEventListener("submit", function (e) {
         // select the input from the form.
         const input = document.getElementById('text');
-        // if (input.value.trim() === "") {
-        //   alert('Please add a valid recipe name!');
-        //   input.focus();
-        // } else {
-        //   console.log(input.value)
-        //   foodApp.getRecipes(input.value)
-        // }
+        
         console.log(input.value)
         foodApp.getRecipes(input.value)
         input.value = '';
@@ -76,7 +70,6 @@ foodApp.buttons.forEach((individualButton) => {
     console.log(individualButton);
     individualButton.addEventListener('click', () => {
         individualButton.classList.toggle('grey');
-
         console.log(individualButton.classList);
     })
 });
