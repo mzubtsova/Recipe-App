@@ -8,6 +8,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  padding-bottom: 62px;
 }
 
   .contactNavigation li a:hover,
@@ -68,7 +69,6 @@
 
 .contactPage {
     background-color: $darkgreen;
-    
     color: $white;
     max-width: 700px;
     margin: 0px auto;
