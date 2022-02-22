@@ -60,7 +60,6 @@ foodApp.displayrecipes = function (recipes) {
     listElement.append(calories);
     ul.append(listElement);
   });
-
 }
 
 // changing button color on click
@@ -74,7 +73,10 @@ foodApp.buttons.forEach((individualButton) => {
   })
 });
 
+
 foodApp.init()
+
+
 
 
 

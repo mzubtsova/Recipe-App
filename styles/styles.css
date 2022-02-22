@@ -270,6 +270,9 @@ img {
   margin: 0 auto;
 }
 
+.navigation {
+  padding-bottom: 100px;
+}
 .navigation nav {
   background: transparent;
   height: 80px;
@@ -279,12 +282,12 @@ img {
   text-align: center;
   padding-top: 30px;
 }
-.navigation nav ul li {
+.navigation nav li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-.navigation nav ul a {
+.navigation nav a {
   color: white;
   font-size: 25px;
   padding: 0 60px;
@@ -482,6 +485,7 @@ img {
   background-position: center;
   background-size: cover;
   position: relative;
+  padding-bottom: 62px;
 }
 
 .contactNavigation li a:hover,

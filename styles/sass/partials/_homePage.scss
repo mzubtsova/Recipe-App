@@ -1,13 +1,15 @@
 
-  
-  .navigation nav{
+  .navigation{
+    padding-bottom:100px;
+    nav{
   background: transparent;
   height: 80px;
   width: 100%;
   ul {
     text-align: center;
     padding-top: 30px;
-    li {
+  }
+  li {
       display: inline-block;
       line-height: 80px;
       margin: 0 5px;
@@ -20,8 +22,8 @@
       text-decoration: none;
       padding-top: 5px;
     }
-  }
 }
+  }
 
 label.logo {
   color: $white;
